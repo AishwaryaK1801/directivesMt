@@ -1,0 +1,55 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <mat-card>
+                <mat-card-title class="text-center mb-4">confirm purchase</mat-card-title>
+                    
+                    <mat-card-content>
+                        <form #creditCardForm="ngForm">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label for="owner">owner<sup class="text-danger"><strong>*</strong></sup></label>
+                                        <input  required type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="cvv">cvv<sup class="text-danger"><strong>*</strong></sup></label>
+                                        <input required minlength="3" maxlength="3" type="password" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="cardNumber">Card Number <sup class="text-danger"><strong>*</strong></sup></label>
+                                        <input appCreditCard #inputRef class="form-control" type="text" id="cardNumber" name="cardNumber">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label  for="expirationDat">Expiration Date <sup class="text-danger"><strong>*</strong></sup></label>
+                                        <input type="datetime-local" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 offset-md-1">
+                                    <div class="imgContainer">
+                                        <img src="https://www.pikpng.com/pngl/b/61-612923_visa-mastercard-amex-master-card-visa-american-express.png" >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn-block btn-sm" (click)="onConfirm()" mat-raised-button color="primary">Confirm</button>
+                        </form>
+                    </mat-card-content>
+                
+              </mat-card>
+        </div>
+    </div>
+</div>
