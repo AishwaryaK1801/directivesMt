@@ -10,6 +10,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { NavbarDropdownDirective } from './shared/directives/navbar-dropdown.directive';
 import { NavbarDropdownComponent } from './shared/components/navbar-dropdown/navbar-dropdown.component';
+import { HilightDirective } from './shared/directives/hilight.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavbarDropdownComponent } from './shared/components/navbar-dropdown/nav
     CreditCardDirective,
     CreditCardComponent,
     NavbarDropdownDirective,
-    NavbarDropdownComponent
+    NavbarDropdownComponent,
+    HilightDirective
   ],
   imports: [
     BrowserModule,
